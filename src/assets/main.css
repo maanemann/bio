@@ -1,0 +1,30 @@
+
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
+  margin-top: var(--bio-gap-3);
+  padding: var(--bio-gap-_25);
+}
+
+main {
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--bio-gap-1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--bio-c-accent-600);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (min-width: 1024px) {
+  main {
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 1fr;
+  }
+}
